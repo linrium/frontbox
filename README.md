@@ -17,6 +17,9 @@ Choose one with them
 2. scss
 3. styl
 
+install npm package
+
+    $ npm install
 
 after that you must run
 
