@@ -13,9 +13,9 @@ Choose one with them
 
 # stylesheet
 
-    1. sass
-    2. scss
-    3. styl
+1. sass
+2. scss
+3. styl
 
 
 after that you must run
