@@ -9,6 +9,18 @@
   "dependencies": {
     "fs-extra": "^0.30.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lynkxyz/frontbox.git"
+  },
+  "keywords": [
+    "html",
+    "jade",
+    "stylus",
+    "sass",
+    "scss",
+    "static"
+  ],
   "devDependencies": {
     "fs-extra": "^0.30.0"
   },
