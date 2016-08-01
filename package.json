@@ -1,0 +1,23 @@
+{
+  "name": "frontbox",
+  "version": "0.0.1",
+  "description": "Web Static Builder",
+  "main": "index.js",
+  "bin": {
+    "frontbox": "frontbox.js"
+  },
+  "dependencies": {
+    "fs-extra": "^0.30.0"
+  },
+  "devDependencies": {"fs-extra": "^0.30.0"},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lynkxyz <lynkxyz@gmail.com> (http://lynkxyz.github.io)",
+  "license": "ISC",
+  "bin": {
+    "frontbox": "bin/frontbox.js"
+  },
+  "main" : "./lib/index.js",
+  "preferGlobal": "true"
+}

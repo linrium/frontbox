@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title #{title}
+
+    include modules/_scripts
+    include modules/_styles
+    include modules/_fav
+
+body
+    include mixins/_mixins
+    include mixins/_svg
+
+    include components/_header
+    include components/home/_home
+    include components/_footer
