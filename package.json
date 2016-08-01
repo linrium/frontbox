@@ -24,6 +24,7 @@
   "devDependencies": {
     "fs-extra": "^0.30.0"
   },
+  "homepage": "https://github.com/lynkxyz/frontbox",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
