@@ -1,0 +1,2 @@
+# frontbox
+Web Static Builder
