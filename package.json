@@ -1,7 +1,7 @@
 {
   "name": "frontbox",
   "version": "0.0.1",
-  "description": "Web Static Builder",
+  "description": "Static Site Generators",
   "main": "index.js",
   "bin": {
     "frontbox": "frontbox.js"
