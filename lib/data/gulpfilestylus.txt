@@ -28,6 +28,11 @@ var shorthand = require('gulp-shorthand');
 var rename = require("gulp-rename");
 var csscomb = require('gulp-csscomb');
 
+// optimize js
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var babel = require('gulp-babel');
+
 var dir = {
     stylus: '_styles/',
     jade: '_templates/',
@@ -151,4 +156,27 @@ gulp.task('optimize-css', function() {
         .pipe(gulp.dest(build.stylus));
 });
 
-gulp.task('optimize', ['optimize-css']);
+gulp.task('es5', function() {
+    gulp.src(build.js + 'functions.js')
+        // .pipe(concat('all.js'))
+        .pipe(rename({
+            suffix: '.es5'
+        }))
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('_build/js'));
+});
+
+gulp.task('optimize-js', function() {
+    gulp.src(build.js + 'functions.es5.js')
+        .pipe(concat('all.js'))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(uglify())
+        .pipe(gulp.dest('_build/js'));
+});
+
+
+gulp.task('optimize', ['optimize-css', 'babel', 'optimize-js']);
