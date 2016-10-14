@@ -1,2 +1,8 @@
-script(src="js/jquery-3.0.0.min.js")
+// jQuery
+script(src="../../bower_components/jQuery/dist/jquery.min.js")
+
+// masonry
+script(src="../../bower_components/masonry/dist/masonry.pkgd.min.js")
+
+// My script
 script(src="js/functions.js")
